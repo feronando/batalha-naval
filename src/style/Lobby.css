@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #BDB7B8;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3vw;
+    color: #30386f;
+}
+
+.btnLobbyReady {
+    font-size: 2vw;
+    background-color: #1e665a;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .2em;
+    color: #e3d4d4;
+    font-weight: bold;
+}
+
+.btnLobbyReady:hover, .btnLobby:focus {
+    background-color: #398678;
+}
+
+.btnLobbyNotReady {
+    font-size: 2vw;
+    background-color: #820151;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: .2em;
+    color: #e3d4d4;
+    font-weight: bold;
+    cursor: default;
+}
+
+@keyframes ellipsis {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
+}
+
+.ellipsis::after {
+    display: inline-block;
+    animation: ellipsis steps(1,end) 1s infinite;
+    content: '';
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid {
+    margin: 2vmin;
+    display: grid;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#player-grid {
+    background-color: #767DB5;
+    grid-template-rows: repeat(10, 3vw);
+    grid-template-columns: repeat(10, 3vw);
+}
+
+.cell {
+    border: 1px solid rgb(189, 183, 184);
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#player-grid .cell:hover {
+    background-color: #414884;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #414884;
+}
+
+.game-rules {
+    background-color: #e3d4d4;
+    width: 20vw;
+    height: 23vw;
+    border-radius: 5px;
+    border: 3px solid #1E665A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+
+.rules-content {
+    margin-top: -2vw;
+    margin-bottom: 0vw;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 2vw;
+    color: #1E665A;
+    font-weight: bolder;
+}
+
+.rules {
+    color: rgb(37, 38, 41);
+    font-weight: light;
+    margin: 10px 10px;
+    font-size: 1.2vw;
+}

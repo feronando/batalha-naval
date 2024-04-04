@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #BDB7B8;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 9vw;
+    color: #30386f;
+}
+
+.btnHome {
+    font-size: 2vw;
+    background-color: #30386f;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .2em;
+    color: #BDB7B8;
+    font-weight: bold;
+}
+
+.btnHome:hover, .btnHome:focus {
+    background-color: #4c538e;
+}
